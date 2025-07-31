@@ -1,7 +1,7 @@
 <h1>Lógica de programação: praticando com desafios</h1>
 
 <h2>🔖 Sobre</h2>
-<p>Nesse projeto, pretendo aproveitar os conhecimentos do ultimo curso de Git e Github e ao mesmo tempo Estudar lógica de programação...
+<p>Neste projeto, pretendo aplicar os conhecimentos adquiridos no último curso de Git e GitHub, enquanto estudo lógica de programação...
 
 
 </p>
