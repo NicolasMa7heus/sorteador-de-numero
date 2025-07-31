@@ -4,3 +4,4 @@ function sortear (){
     let de = document.getElementById('de').value; // Variavél criada para buscar o valor do input cuja o id="de"
     let ate = document.getElementById('ate').value; // Variavél criada para buscar o valor do input cuja o id="ate"
 }
+//sincronização
