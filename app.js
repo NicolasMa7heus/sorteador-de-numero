@@ -3,7 +3,8 @@ function sortear (){
     let quantidade = parseInt(document.getElementById('quantidade').value); // Variavél criada para buscar o valor do input cuja o id="quantidade"
     let de = parseInt(document.getElementById('de').value); 
     let ate = parseInt(document.getElementById('ate').value);
-
+/* Adicionado o parseInt para garantir que o valor que vai retornar pelo value seja do tipo numero inteiro,
+  porque por padrão o value retorna uma string */
     let sorteados = [];
     let numero;
 
@@ -13,12 +14,7 @@ function sortear (){
         sorteados.push(numero);
     }
     alert(sorteados);
-
 }
-/* Adicionado o parseInt para garantir que o valor que vai retornar pelo value seja do tipo numero inteiro,
-  porque por padrão o value retorna uma string */
-
-
 
 // Função para gerar o numero aleatorio entre o min e o max 
 function obterNumeroAleatorio(min, max){
