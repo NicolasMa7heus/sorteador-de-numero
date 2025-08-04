@@ -13,7 +13,9 @@ function sortear (){
         numero = obterNumeroAleatorio (de, ate);// (de e até) seria o max e min da function 
         sorteados.push(numero);
     }
-    alert(sorteados);
+    
+    let resultado = document.getElementById('resultado'); // pegando o id da div 'resultado'
+    resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados:  ${sorteados}</label>`// alterando o texto com o resultado do numero sorteado
 }
 
 // Função para gerar o numero aleatorio entre o min e o max 
