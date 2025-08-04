@@ -22,3 +22,6 @@ function sortear (){
 function obterNumeroAleatorio(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min; // gera o numero aleatório entre os dois valaores inclusive o ultimo;
 }
+
+
+// teste sincronização
