@@ -15,18 +15,30 @@ function sortear (){
         while (sorteados.includes(numero)) {         // enquanto a variavel sorteados tiver o numero 
              numero = obterNumeroAleatorio(de, ate);
         }
-
         sorteados.push(numero);
     }
     
     let resultado = document.getElementById('resultado'); // pegando o id da div 'resultado'
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados:  ${sorteados}</label>`// alterando o texto com o resultado do numero sorteado
-}
 
+    alterarStatusBotao();
+}
 // Função para gerar o numero aleatorio entre o min e o max 
 function obterNumeroAleatorio(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min; // gera o numero aleatório entre os dois valaores inclusive o ultimo;
 }
+function alterarStatusBotao(){
+    let  botao = document.getElementById('btn-reiniciar');
+    if (botao.classList.contains('container__botao-desabilitado')){  // se o botão contém  a classe
+        botao.classList.remove('container__botao-desabilitado'); // remeve a class 
+        botao.classList.add('container__botao'); // e coloca a classe container__botao
+    } else { // se não remove a classe e depois add 
+        botao.classList.remove('container__botao'); 
+        botao.classList.add('container__botao-desabilitado'); // add class
+    }
+}
+function reiniciar(){
 
+}
 
 // teste sincronização
