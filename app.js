@@ -11,6 +11,11 @@ function sortear (){
     // Criado uma variavel que vai ser o controlador do loop. E criamos um loop que vai de 0 até a *quantidade* que a pessoa digitou
     for ( let i = 0; i < quantidade; i++){
         numero = obterNumeroAleatorio (de, ate);// (de e até) seria o max e min da function 
+
+        while (sorteados.includes(numero)) {         // enquanto a variavel sorteados tiver o numero 
+             numero = obterNumeroAleatorio(de, ate);
+        }
+
         sorteados.push(numero);
     }
     
